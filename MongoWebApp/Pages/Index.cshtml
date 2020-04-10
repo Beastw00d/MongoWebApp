@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>If it is your first time loading the app use the "Seed Database" button first. Then after that is complete use the "Fetch Data" button and monitor the memory usage afterwards.</p>
+
+        <a asp-page-handler="SeedDatabase" class="btn btn-primary">Seed Database</a>
+        
+        <a asp-page-handler="FetchData" class="btn btn-dark">Fetch Data</a>
+    </div>
